@@ -1,6 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import minhaFoto from '../assets/images/minha-foto.jpg';
 
 const Sobre = () => {
   return (
@@ -11,10 +12,11 @@ const Sobre = () => {
         <div className="md:flex gap-8 mb-12">
           <div className="md:w-1/3 mb-6 md:mb-0">
             <div className="rounded-2xl overflow-hidden bg-accent/10 aspect-square relative">
-              {/* Placeholder para foto - substituir pela foto real */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-8xl">👤</span>
-              </div>
+              <img 
+              src={minhaFoto} 
+              alt="Foto de perfil" 
+              className="absolute inset-0 w-full object-cover"
+              />
             </div>
           </div>
           
