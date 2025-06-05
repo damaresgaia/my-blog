@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -109,12 +108,12 @@ export default {
           '50%': { transform: 'translateY(-10px)' }
         },
         'breathe-in': {
-          from: { transform: 'scale(1)' },
-          to: { transform: 'scale(1.5)' }
+          '0%': { transform: 'scale(1)', opacity: '0.4' },
+          '100%': { transform: 'scale(1.5)', opacity: '0.6' }
         },
         'breathe-out': {
-          from: { transform: 'scale(1.5)' },
-          to: { transform: 'scale(1)' }
+          '0%': { transform: 'scale(1.5)', opacity: '0.6' },
+          '100%': { transform: 'scale(1)', opacity: '0.4' }
         }
       },
       animation: {
@@ -122,8 +121,8 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'twinkle': 'twinkle 3s ease-in-out infinite',
         'float': 'float 6s ease-in-out infinite',
-        'breathe-in': 'breathe-in 4s ease-in-out',
-        'breathe-out': 'breathe-out 4s ease-in-out'
+        'breathe-in': 'breathe-in 4s cubic-bezier(0.4, 0, 0.2, 1)',
+        'breathe-out': 'breathe-out 4s cubic-bezier(0.4, 0, 0.2, 1)'
       }
     }
   },
