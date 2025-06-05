@@ -153,7 +153,12 @@ const BreathingTimer = () => {
 
         <Slider
           value={[duration]}
-          onValueChange={([value]) => setDuration(value)}
+          onValueChange={([value]) => {
+            setDuration(value);
+            if (!isActive) {
+              setTimeLeft(value * 60);
+            }
+          }}
           disabled={isActive}
           min={1}
           max={10}
