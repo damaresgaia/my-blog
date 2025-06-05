@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import minhaFoto from "../assets/images/minha-foto.jpg";
+import minhaFoto from "../assets/images/my-photo.jpg";
 
 const Sobre = () => {
   return (

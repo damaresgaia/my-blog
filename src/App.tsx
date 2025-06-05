@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,17 +5,17 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/hooks/use-theme";
 
-// Páginas
+// Pages
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Tecnologia from "./pages/Tecnologia";
-import TreinoLeitura from "./pages/TreinoLeitura";
-import TimerRespiracao from "./pages/TimerRespiracao";
-import Livros from "./pages/Livros";
+import Technology from "./pages/Technology";
+import ReadingTraining from "./pages/ReadingTraining";
+import BreathingTimer from "./pages/BreathingTimer";
+import Books from "./pages/Books";
 import Blog from "./pages/Blog";
-import Sobre from "./pages/Sobre";
+import About from "./pages/About";
 
-// Componentes
+// Components
 import SpaceBackground from "./components/SpaceBackground";
 import { BlogSidebar } from "./components/BlogSidebar";
 
@@ -35,12 +34,15 @@ const App = () => (
               <main className="flex-1 p-6 md:p-10">
                 <Routes>
                   <Route path="/" element={<Index />} />
-                  <Route path="/tecnologia" element={<Tecnologia />} />
-                  <Route path="/treino-leitura" element={<TreinoLeitura />} />
-                  <Route path="/timer-respiracao" element={<TimerRespiracao />} />
-                  <Route path="/livros" element={<Livros />} />
+                  <Route path="/technology" element={<Technology />} />
+                  <Route
+                    path="/reading-training"
+                    element={<ReadingTraining />}
+                  />
+                  <Route path="/breathing-timer" element={<BreathingTimer />} />
+                  <Route path="/books" element={<Books />} />
                   <Route path="/blog" element={<Blog />} />
-                  <Route path="/sobre" element={<Sobre />} />
+                  <Route path="/about" element={<About />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

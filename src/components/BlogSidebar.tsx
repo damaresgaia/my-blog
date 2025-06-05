@@ -25,22 +25,22 @@ const menuItems = [
   {
     title: "Tecnologia",
     icon: Code,
-    link: "/tecnologia",
+    link: "/technology",
   },
   {
     title: "Treino de Leitura",
     icon: BookOpen,
-    link: "/treino-leitura",
+    link: "/reading-training",
   },
   {
     title: "Timer de Respiração",
     icon: Timer,
-    link: "/timer-respiracao",
+    link: "/breathing-timer",
   },
   {
     title: "Avaliações de Livros",
     icon: Book,
-    link: "/livros",
+    link: "/books",
   },
   {
     title: "Blog Pessoal",
@@ -50,7 +50,7 @@ const menuItems = [
   {
     title: "Sobre Mim",
     icon: User,
-    link: "/sobre",
+    link: "/about",
   },
 ];
 
