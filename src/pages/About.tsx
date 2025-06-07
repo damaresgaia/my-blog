@@ -37,10 +37,10 @@ const Sobre = () => {
             </p>
 
             <div className="flex gap-4 mt-6">
-              <a href="#" className="text-primary hover:text-primary/80">
+              <a href="https://www.linkedin.com/in/damaresgaia" className="text-primary hover:text-primary/80">
                 LinkedIn
               </a>
-              <a href="#" className="text-primary hover:text-primary/80">
+              <a href="https://github.com/damaresgaia" className="text-primary hover:text-primary/80">
                 GitHub
               </a>
             </div>
