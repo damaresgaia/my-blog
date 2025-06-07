@@ -14,6 +14,7 @@ import BreathingTimer from "./pages/BreathingTimer";
 import Books from "./pages/Books";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
+import Ted from "./pages/Ted";
 
 // Components
 import SpaceBackground from "./components/SpaceBackground";
@@ -43,6 +44,7 @@ const App = () => (
                   <Route path="/books" element={<Books />} />
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/about" element={<About />} />
+                  <Route path="/ted" element={<Ted />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

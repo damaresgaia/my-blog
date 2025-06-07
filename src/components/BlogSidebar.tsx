@@ -10,6 +10,7 @@ import {
   LayoutDashboard,
   X,
   Pencil,
+  Dog,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -47,6 +48,11 @@ const menuItems = [
     title: "Blog Pessoal",
     icon: Pencil,
     link: "/blog",
+  },
+  {
+    title: "Ted",
+    icon: Dog,
+    link: "/ted",
   },
   {
     title: "Sobre Mim",
