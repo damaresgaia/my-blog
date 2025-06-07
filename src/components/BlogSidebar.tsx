@@ -11,6 +11,7 @@ import {
   X,
   Pencil,
   Dog,
+  Rocket,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -53,6 +54,11 @@ const menuItems = [
     title: "Ted",
     icon: Dog,
     link: "/ted",
+  },
+  {
+    title: "NASA APOD",
+    icon: Rocket,
+    link: "/nasa",
   },
   {
     title: "Sobre Mim",

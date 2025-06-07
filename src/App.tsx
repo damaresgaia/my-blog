@@ -15,6 +15,7 @@ import Books from "./pages/Books";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Ted from "./pages/Ted";
+import NasaGallery from "./pages/NasaGallery";
 
 // Components
 import SpaceBackground from "./components/SpaceBackground";
@@ -45,6 +46,7 @@ const App = () => (
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/ted" element={<Ted />} />
+                  <Route path="/nasa" element={<NasaGallery />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

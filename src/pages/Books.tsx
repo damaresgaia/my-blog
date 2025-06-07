@@ -1,5 +1,9 @@
-
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -16,51 +20,63 @@ const bookReviews: BookReview[] = [
   {
     title: "Projeto Hail Mary",
     author: "Andy Weir",
-    cover: "https://m.media-amazon.com/images/I/81uPCrYVwbL._AC_UF1000,1000_QL80_.jpg",
+    cover:
+      "https://m.media-amazon.com/images/I/81uPCrYVwbL._AC_UF1000,1000_QL80_.jpg",
     rating: 5,
     genre: ["Ficção Científica", "Aventura"],
-    review: "Uma jornada espacial fascinante que mistura ciência, humor e suspense de forma brilhante. Andy Weir consegue mais uma vez criar um protagonista cativante e situações científicas complexas de forma acessível."
+    review:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
   {
     title: "Duna",
     author: "Frank Herbert",
-    cover: "https://m.media-amazon.com/images/I/81ym3QUd3KL._AC_UF1000,1000_QL80_.jpg",
+    cover:
+      "https://m.media-amazon.com/images/I/81ym3QUd3KL._AC_UF1000,1000_QL80_.jpg",
     rating: 5,
     genre: ["Ficção Científica", "Space Opera"],
-    review: "A obra-prima de Herbert continua atual e impactante. Uma narrativa épica sobre política, religião, ecologia e o destino da humanidade, com personagens complexos e um universo ricamente detalhado."
+    review:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
   {
     title: "O Problema dos Três Corpos",
     author: "Cixin Liu",
-    cover: "https://m.media-amazon.com/images/I/91IlqCQkySL._AC_UF1000,1000_QL80_.jpg",
+    cover:
+      "https://m.media-amazon.com/images/I/91IlqCQkySL._AC_UF1000,1000_QL80_.jpg",
     rating: 4,
     genre: ["Ficção Científica", "Hard Sci-Fi"],
-    review: "Uma visão única da ficção científica com perspectiva chinesa. O livro mistura física avançada, história e um primeiro contato alienígena de forma inovadora, desafiando as convenções do gênero."
+    review:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
   {
     title: "Fundação",
     author: "Isaac Asimov",
-    cover: "https://m.media-amazon.com/images/I/81sQN7OAM0L._AC_UF1000,1000_QL80_.jpg",
+    cover:
+      "https://m.media-amazon.com/images/I/81sQN7OAM0L._AC_UF1000,1000_QL80_.jpg",
     rating: 4,
     genre: ["Ficção Científica", "Clássico"],
-    review: "Um clássico que permanece relevante. Asimov cria um futuro distante onde a matemática pode prever o destino da humanidade, abordando temas como determinismo, livre arbítrio e ciclos históricos."
+    review:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
   {
     title: "Admirável Mundo Novo",
     author: "Aldous Huxley",
-    cover: "https://m.media-amazon.com/images/I/81P6L8iO6OL._AC_UF1000,1000_QL80_.jpg",
+    cover:
+      "https://m.media-amazon.com/images/I/81P6L8iO6OL._AC_UF1000,1000_QL80_.jpg",
     rating: 5,
     genre: ["Ficção Científica", "Distopia"],
-    review: "Uma distopia que se torna mais pertinente a cada ano. Huxley previu uma sociedade controlada não pela repressão, mas pelo prazer e distração constantes, oferecendo uma análise profunda sobre felicidade versus liberdade."
+    review:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
   {
     title: "A Máquina do Tempo",
     author: "H.G. Wells",
-    cover: "https://m.media-amazon.com/images/I/71Gc2BdHRtL._AC_UF1000,1000_QL80_.jpg",
+    cover:
+      "https://m.media-amazon.com/images/I/71Gc2BdHRtL._AC_UF1000,1000_QL80_.jpg",
     rating: 4,
     genre: ["Ficção Científica", "Clássico"],
-    review: "O pioneiro das histórias de viagem no tempo, Wells usa essa premissa para explorar questões sobre evolução, classes sociais e o destino da humanidade em uma narrativa que permanece fascinante."
-  }
+    review:
+      "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
 ];
 
 const RatingStars = ({ rating }: { rating: number }) => {
@@ -71,7 +87,9 @@ const RatingStars = ({ rating }: { rating: number }) => {
           key={star}
           className={cn(
             "w-5 h-5",
-            star <= rating ? "fill-primary text-primary" : "text-muted stroke-muted-foreground"
+            star <= rating
+              ? "fill-primary text-primary"
+              : "text-muted stroke-muted-foreground"
           )}
         />
       ))}
@@ -83,10 +101,12 @@ const Livros = () => {
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Avaliações de Livros</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          Avaliações de Livros
+        </h1>
         <p className="text-lg mb-10 text-muted-foreground">
-          Minhas resenhas, impressões e recomendações literárias, com foco em ficção científica,
-          fantasia, tecnologia e desenvolvimento pessoal.
+          Minhas resenhas, impressões e recomendações literárias, com foco em
+          ficção científica, fantasia, tecnologia e desenvolvimento pessoal.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
