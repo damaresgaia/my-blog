@@ -107,3 +107,4 @@ const Ted: React.FC = () => {
 };
 
 export default Ted;
+ 

@@ -21,19 +21,13 @@ const Sobre = () => {
 
           <div className="md:w-2/3">
             <h2 className="text-2xl font-bold mb-4">
-              Olá, sou a autora do Blog
+              Olá, sou Damares Gaia
             </h2>
             <p className="text-muted-foreground mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-              quasi impedit! Vitae aut dignissimos exercitationem, totam
-              voluptatum repellendus a ducimus deserunt temporibus possimus
-              reprehenderit dolorem, nesciunt sed voluptates? Voluptatem, ad.
+              Sou estudante de Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Santa Catarina (IFSC), com formação técnica em Programação de Sistemas e Programação Web pelo SENAC. Antes de ingressar na área de tecnologia, atuei como advogada, o que me proporcionou uma boa base em pensamento crítico, resolução de problemas e comunicação clara. Essas habilidades hoje aplico no desenvolvimento de soluções digitais.
             </p>
             <p className="text-muted-foreground">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-              exercitationem ipsum id quas nulla maiores sequi quia distinctio
-              quis temporibus ratione ex, obcaecati, quibusdam asperiores
-              corrupti, quod fugiat ut expedita?
+              Sou apaixonada por programação, computação quântica, astronomia e tudo que envolve inovação tecnológica. Acredito que a tecnologia tem o poder de transformar vidas e impactar positivamente o mundo ao nosso redor.
             </p>
 
             <div className="flex gap-4 mt-6">

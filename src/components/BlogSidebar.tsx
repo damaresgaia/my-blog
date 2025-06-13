@@ -96,7 +96,7 @@ export const BlogSidebar = ({ className }: BlogSidebarProps) => {
       </Button>
 
       {/* Sidebar para desktop */}
-      <div
+      <div 
         className={cn(
           "hidden md:flex flex-col h-screen sticky top-0 bg-background border-r transition-all duration-300 z-40",
           collapsed ? "w-20" : "w-64",
@@ -115,7 +115,7 @@ export const BlogSidebar = ({ className }: BlogSidebarProps) => {
             )}
           </Button>
         </div>
-
+        
         <div className="flex-1 overflow-y-auto">
           <nav className="px-2 py-4 space-y-1">
             {menuItems.map((item) => (
@@ -138,14 +138,14 @@ export const BlogSidebar = ({ className }: BlogSidebarProps) => {
       </div>
 
       {/* Sidebar para mobile (overlay) */}
-      <div
+      <div 
         className={cn(
           "fixed inset-0 bg-background/80 backdrop-blur-sm z-50 md:hidden transition-opacity duration-300",
           mobileOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
         onClick={() => setMobileOpen(false)}
       >
-        <div
+        <div 
           className="absolute inset-y-0 left-0 w-3/4 max-w-xs bg-background shadow-lg p-4"
           onClick={(e) => e.stopPropagation()}
         >
@@ -155,7 +155,7 @@ export const BlogSidebar = ({ className }: BlogSidebarProps) => {
               <X className="h-5 w-5" />
             </Button>
           </div>
-
+          
           <nav className="space-y-2">
             {menuItems.map((item) => (
               <Link

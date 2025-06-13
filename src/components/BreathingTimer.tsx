@@ -20,18 +20,18 @@ const BreathingTimer = () => {
   const [scale, setScale] = useState(1);
   const [phaseTimer, setPhaseTimer] = useState(0);
   const breathCircleRef = useRef<HTMLDivElement>(null);
-
+  
   const breathingPhases = [
     { state: BreathState.INHALE, duration: 4 },
     { state: BreathState.HOLD_FULL, duration: 4 },
     { state: BreathState.EXHALE, duration: 4 },
     { state: BreathState.HOLD_EMPTY, duration: 4 },
   ];
-
+  
   useEffect(() => {
     setTimeLeft(duration * 60);
   }, [duration]);
-
+  
   useEffect(() => {
     let timerInterval: number | null = null;
     let phaseInterval: number | null = null;
@@ -70,7 +70,7 @@ const BreathingTimer = () => {
         }
       }
     };
-
+    
     if (isActive && timeLeft > 0) {
       // Timer principal para contagem regressiva
       timerInterval = window.setInterval(() => {
@@ -110,7 +110,7 @@ const BreathingTimer = () => {
 
     return clearAllIntervals;
   }, [isActive, timeLeft, phaseTimer]);
-
+  
   const toggleTimer = () => {
     if (timeLeft === 0) {
       setTimeLeft(duration * 60);
@@ -120,7 +120,7 @@ const BreathingTimer = () => {
     setBreathState(isActive ? BreathState.PAUSED : BreathState.INHALE);
     setScale(1);
   };
-
+  
   const resetTimer = () => {
     setIsActive(false);
     setTimeLeft(duration * 60);
@@ -128,10 +128,10 @@ const BreathingTimer = () => {
     setPhaseTimer(0);
     setScale(1);
   };
-
+  
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
-
+  
   return (
     <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto space-y-8">
       <div className="text-center space-y-4">
@@ -139,7 +139,7 @@ const BreathingTimer = () => {
           🧘‍♀️ Respiração em Caixa
         </h2>
       </div>
-
+      
       <div className="w-full space-y-4">
         <div className="flex items-center justify-between">
           <span>
@@ -150,9 +150,9 @@ const BreathingTimer = () => {
             {seconds.toString().padStart(2, "0")}
           </span>
         </div>
-
-        <Slider
-          value={[duration]}
+        
+        <Slider 
+          value={[duration]} 
           onValueChange={([value]) => {
             setDuration(value);
             if (!isActive) {
@@ -166,15 +166,15 @@ const BreathingTimer = () => {
           className="my-6"
         />
       </div>
-
+      
       <div className="relative flex items-center justify-center w-60 h-60">
         {/* Background circle */}
         <div className="absolute w-60 h-60 rounded-full bg-accent/10"></div>
-
+        
         {/* Breathing circle */}
-        <div
+        <div 
           ref={breathCircleRef}
-          style={{
+          style={{ 
             transform: `scale(${scale})`,
             opacity: 0.4 + (scale - 1) * 0.4,
             transition: "all 50ms linear",
@@ -186,15 +186,15 @@ const BreathingTimer = () => {
           </span>
         </div>
       </div>
-
+      
       <div className="flex space-x-4">
         <Button onClick={toggleTimer} className="w-32" variant="default">
           {isActive ? "Pausar" : timeLeft === 0 ? "Reiniciar" : "Iniciar"}
         </Button>
-
-        <Button
-          onClick={resetTimer}
-          variant="outline"
+        
+        <Button 
+          onClick={resetTimer} 
+          variant="outline" 
           className="w-32"
           disabled={timeLeft === duration * 60 && !isActive}
         >
